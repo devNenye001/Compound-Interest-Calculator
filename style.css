@@ -1,0 +1,186 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: "Montserrat";
+    color: #353430;
+}
+
+body{
+    background-color: #F1EBDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.box1{
+    width: 350px;
+    height: 500px;
+    border: 3px solid black;
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.box1 h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box1 img{
+    height: 300px;
+    width: 330px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+form{
+    height: 500px;
+    width: 450px;
+    margin: 20px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+}
+form input{
+    border: 3px solid black;
+    background-color: #F2EFEB;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+form label{
+    font-size: 25px;
+}
+
+button{
+    height: 60px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 1px;
+    background-color: #CF6C05;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+button{
+   cursor: pointer;
+   transition: transform 0.1s ease;
+}
+button:active {
+  transform: translateY(5px);
+}
+button:hover{
+    background-color: #df882c;
+    font-size: 21px;
+}
+
+span{
+    font-size: 35px;
+    font-weight: bold;
+    color: green;
+}
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+        align-items: stretch;
+    }
+    .box1, form {
+        width: 98vw;
+        min-width: 0;
+        margin: 10px auto;
+        padding: 15px 10px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    .box1 img {
+        width: 96vw;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    form {
+        width: 98vw;
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+    form input {
+        font-size: 16px;
+        padding: 5px 10px;
+        height: 40px;
+    }
+    form label {
+        font-size: 18px;
+    }
+    .box1 h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    button {
+        font-size: 16px;
+        height: 45px;
+        width: 100%;
+    }
+    span {
+        font-size: 22px;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    html, body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    body {
+        padding: 0;
+    }
+    .box1, form {
+        width: 100vw;
+        min-width: 0;
+        border-radius: 0;
+        padding: 8px 2vw;
+        margin: 0 auto 10px auto;
+        box-sizing: border-box;
+    }
+    .box1 img {
+        width: 96vw;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    .box1 h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    form label {
+        font-size: 13px;
+    }
+    form input {
+        font-size: 13px;
+        padding: 4px 8px;
+        height: 28px;
+    }
+    button {
+        font-size: 13px;
+        height: 32px;
+        width: 100%;
+    }
+    span {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+    }
+}
